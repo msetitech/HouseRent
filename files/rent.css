@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onest";
+}
+body {
+  background: #e4e4e4;
+}
+main {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  padding: 0 2%;
+  height: 90vh;
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  background: white;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.top input {
+  height: 36px;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 4px;
+}
+.top button {
+  margin-left: auto;
+  height: 36px;
+  background: brown;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  color: white;
+}
+.top select {
+  height: 36px;
+  width: 100px;
+  border: none;
+  margin: 0 10px;
+}
+.top select option {
+  font-family: "Onest";
+}
+.location {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  background: whitesmoke;
+  border: 1px solid brown;
+  border-radius: 4px;
+}
+.location svg {
+  fill: brown;
+  margin-right: 10px;
+}
+
+.location input {
+  background: transparent;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
+.bed input {
+  padding: 10px;
+}
+
+.info {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  background: white;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.info h1 {
+  font-size: 20px;
+}
+
+.info p {
+  color: gray;
+}
+
+.list {
+  background: white;
+  border-radius: 6px;
+  height: 450px;
+}
+
+.allHouse {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 10px;
+}
+
+.img {
+  height: 200px;
+  width: 100%;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.details {
+  padding: 10px;
+  height: 250px;
+}
+.details h3 {
+  color: gray;
+  font-weight: 400;
+}
+.details h2 {
+  color: gray;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  font-weight: 400px;
+  color: brown;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.price svg {
+  fill: brown;
+}
+
+.loct {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.loct svg {
+  fill: brown;
+  margin-right: 10px;
+}
+
+.allSummary {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.summary svg {
+  fill: rgb(157, 157, 157);
+  margin-right: 10px;
+}
+
+.rentalList {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
